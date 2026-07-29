@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => {
     plugins: [react(), tailwindcss()],
     server: {
       port: 5173,
+      allowedHosts: env.VITE_ALLOWED_HOSTS
+        ? env.VITE_ALLOWED_HOSTS.split(",")
+        : [".akinolabs.io"],
       proxy: {
         "/api": {
           target: env.VITE_API_URL,
