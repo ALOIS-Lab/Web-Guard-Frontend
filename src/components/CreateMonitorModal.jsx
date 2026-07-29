@@ -1,4 +1,4 @@
-import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useState } from 'react';
 
 const INTERVAL_OPTIONS = [
   { value: 0.5, label: '30 sec' },

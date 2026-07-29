@@ -339,7 +339,7 @@ export default function SupportChat() {
   };
 
   const onPointerUp = (e) => finishDrag(e);
-  const onPointerCancel = (e) => {
+  const onPointerCancel = () => {
     clearLongPress();
     const d = dragRef.current;
     if (!d.active) return;
